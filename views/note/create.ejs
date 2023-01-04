@@ -1,0 +1,22 @@
+<html lang="en">
+<%- include('../partials/head_light') %> 
+<body>
+    <%- include('../partials/nav') %>
+    <div class="page-title">
+        <h1>Post a Note</h1>
+    </div>
+  
+    <div class="create-note">
+        <form action="/notes" method="POST">
+            <label class="snippet left">Title</label>
+            <input type="text" id="title" name="title" placeholder="Note title" required />
+            <label class="snippet left">Snippet</label>
+            <input type="text" id="snippet" name="snippet"placeholder="Note snippet" required />
+            <label class="snippet left">Content</label>
+            <textarea id="body" name="body" rows="4" placeholder="Note content" required ></textarea>
+            <button type="submit" class="button1">Post</a>
+      </form>
+    </div>
+
+</body>
+</html> 

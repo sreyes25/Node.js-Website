@@ -1,0 +1,37 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" width="150.008" height="150.008" viewBox="0 0 340 340">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        stroke: #000;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        stroke-width: 18px;
+      }
+
+      .cls-2 {
+        stroke-width: 19px;
+      }
+
+      .cls-3 {
+        fill: red;
+      }
+
+      .cls-4 {
+        stroke-width: 20px;
+      }
+    </style>
+  </defs>
+  <path id="Line_2" data-name="Line 2" class="cls-1" d="M96,138h1V293H96V138Z"/>
+  <path id="Line_3" data-name="Line 3" class="cls-2" d="M170.642,61.349l0.716-.7,75,77-0.716.7Z"/>
+  <path id="Line_4" data-name="Line 4" class="cls-2" d="M245.646,137.646l0.708,0.708-65,65-0.708-.708Z"/>
+  <path id="Line_5" data-name="Line 5" class="cls-1" d="M246.361,271.655l-0.722.69-65-68,0.722-.69Z"/>
+  <circle cx="93.5" cy="137.5" r="33.5"/>
+  <circle class="cls-3" cx="96.5" cy="269.5" r="33.5"/>
+  <circle cx="180.5" cy="202.5" r="33.5"/>
+  <circle class="cls-3" cx="246.5" cy="269.5" r="33.5"/>
+  <circle cx="246.5" cy="137.5" r="33.5"/>
+  <circle cx="170.5" cy="60.5" r="33.5"/>
+  <path id="Line_1" data-name="Line 1" class="cls-4" d="M170.639,60.654l0.722,0.693-74,77-0.721-.692Z"/>
+</svg>

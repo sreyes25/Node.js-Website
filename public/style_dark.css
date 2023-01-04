@@ -1,0 +1,154 @@
+.hoverable {
+    color: #E6E8E6;
+    display: inline-block;
+    backface-visibility: hidden;
+    vertical-align: middle;
+    position: relative;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+  
+  .hoverable:before {
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+    content: "";
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    /* W3C */
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+  }
+  
+  .hoverable:hover, .hoverable:active, .hoverable:focus {
+    transform: translateY(-5px);
+  }
+  
+  .hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before {
+    opacity: 1;
+    border-bottom: 4px solid rgba(198, 198, 198, 0.5);
+    transform: translateY(-5px);
+  }
+  
+  @keyframes bounce-animation {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  .bounce {
+    animation-name: bounce-animation;
+    animation-duration: 2s;
+  }
+  
+  /*everything below here is just setting up the page, so dont worry about it */
+  @media (min-width: 768px) {
+    .navbar {
+      text-align: center !important;
+      float: none;
+      display: inline-block;
+    }
+  }
+  body {
+    background-color: #191919;
+    font-weight: 600;
+    text-align: center !important;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  h1,h2,h3{
+    color: #E6E8E6;
+  }
+  a.button1{
+    color: white;
+    font-size: 20px;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:.5em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+    }
+    a.button1:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    }
+  
+  nav {
+    background: none !important;
+    text-transform: uppercase;
+  }
+
+  nav li {
+    display: inline;
+    margin-left: 2em;
+    margin-right: 2em;
+    list-style-type: none;  
+  }
+  nav li a {
+    text-decoration: none;
+    transition: 0.5s color ease-in-out;
+  }
+  a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .page-title {
+    opacity: 0.75 !important;
+  }
+
+  .logo{
+    width: 70px;
+  }
+
+  .flex {
+    display: flex;
+  }
+  .flex-jc-sb {
+    justify-content: space-between;
+  }
+  .flex-jc-c {
+    justify-content: center;
+  }
+  .flex-ai-c {
+    align-items: center;
+  }
+
+  .container{
+    padding: 2rem;
+  }
+  .content{
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }

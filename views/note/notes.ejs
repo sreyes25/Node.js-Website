@@ -1,0 +1,28 @@
+<html lang="en">
+    <%- include('../partials/head_light') %> 
+<body>
+    <%- include('../partials/nav') %>
+
+  <div>
+    <div class="page-title">
+        <h1>All My Notes</h1>
+    </div>
+    <% if (notes.length > 0) {%>
+        <div class="content">
+        <% notes.forEach(note => { %>
+            <a href="/notes/<%= note._id %>">
+            <div class="note">
+                <div class="title"> <%= note.title%> </div>
+                <p class="snippet"> <%= note.snippet %> </p>
+                <div class="body-text"> <%= note.body %> </div>
+            </div>
+        </a>
+        <% }) %>  
+        <% } else {%> 
+            <p>There are currently no notes to display</p>
+        </div>
+        <% } %> 
+
+  </div>
+</body>
+</html> 
