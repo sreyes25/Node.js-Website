@@ -1,12 +1,29 @@
-
 <html lang="en">
-<%- include('./partials/head_light') %> 
-<body>
+  <%- include('./partials/head_light') %>
+  <body>
     <%- include('./partials/nav') %>
     <div class="page-title"><h1>Home</h1></div>
     <div class="container">
-      <h2>Hi Welcome To My First Node Home Page</h2>
-      <h2>This will be my new website</h2>
+      <h2>Hi Welcome my Node.js Home Page</h2>
+      <h2>This will be my journal for 2023</h2>
     </div>
-</body>
-</html> 
+  </body>
+
+  <script>
+    const menu = document.querySelector("a.toggle");
+    const open = document.querySelector(".menu");
+    const body = document.querySelector("body");
+
+    menu.addEventListener("click", (e) => {
+      console.log("pressed");
+      if (open.classList.contains("hide-for-mobile")) {
+        //Close Ham Menu
+        console.log("open");
+        open.classList.remove("hide-for-mobile");
+      }
+      else{
+        open.classList.add("hide-for-mobile");
+      }
+    });
+  </script>
+</html>

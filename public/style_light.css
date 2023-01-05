@@ -153,10 +153,22 @@
   .container{
     padding: 2rem;
   }
+  @media (max-width: 63.9375em) {
+    .container{
+      padding: 1.3rem;
+    }
+  }
   .content{
     align-items: center;
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+  @media (max-width: 63.9375em) {
+    .content{
+      align-items: center;
+      padding-left: 1.3rem;
+      padding-right: 1.3rem;
+    }
   }
   .note{
     padding: 2rem 5rem 2rem 5rem;
@@ -167,6 +179,14 @@
   .note:hover{
     background-color: rgb(213, 213, 213);
   }
+
+  @media (max-width: 63.9375em) {
+    .note{
+      padding: 2rem 1rem 2rem 1rem;
+    }
+  }
+  
+
   .details{
     position: relative;
   }
@@ -182,6 +202,11 @@
     color: rgb(255, 87, 87, .8);
     background-color: rgba(255, 255, 255, 0.63);
     box-shadow: 1px 2px 3px rgb(19, 19, 19, 0.2);
+  }
+  @media (max-width: 63.9375em) {
+    .delete{
+      right: 5px;
+    }
   }
   .title{
     font-size: 2.5rem;
@@ -222,4 +247,51 @@
   .create-note form button {
     margin: 10px auto 0;
   }
+
+  .navbar-toggle > span {
+    display: block;
+    width: 26px;
+    height: 2.5px;
+    background-color: #191919;
+    transition: all 300ms ease-in-out;
+    transform-origin: 3px 1px;
+  }
+  .navbar-toggle > span:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  /*mobile*/
+  @media (max-width: 63.9375em) {
+    .hide-for-mobile {
+      display: none;
+    }
+  }
   
+  @media (min-width: 64em) {
+    .hide-for-desktop {
+      display: none;
+    }
+  }
+  
+  .dropdown-menu {
+    z-index: 99;
+    margin-top: 1.5rem;
+    position: absolute;
+    width: calc(100% - 7rem);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3c3c3cca;
+    padding: 1.625rem;
+    border-radius: 5px;
+  }
+  .dropdown-menu a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 0.925rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .dropdown-menu a:hover {
+    color: #7a7a7a;
+  }

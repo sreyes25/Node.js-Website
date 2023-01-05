@@ -15,6 +15,10 @@
         </div>
     </div>
 
+    <div class="content">
+      <a href="/notes"><button>Go Back</button></a>
+    </div>
+
 
 <script>
     const trash = document.querySelector('a.delete');
@@ -29,7 +33,23 @@
         .then((data) => window.location.href = data.redirect)
         .catch(err => console.log(err));
     })
-
 </script>
 </body>
+<script>
+    const menu = document.querySelector("a.toggle");
+    const open = document.querySelector(".menu");
+    const body = document.querySelector("body");
+
+    menu.addEventListener("click", (e) => {
+      console.log("pressed");
+      if (open.classList.contains("hide-for-mobile")) {
+        //Close Ham Menu
+        console.log("open");
+        open.classList.remove("hide-for-mobile");
+      }
+      else{
+        open.classList.add("hide-for-mobile");
+      }
+    });
+  </script>
 </html> 

@@ -13,4 +13,21 @@
     </form>
     </div>
 </body>
+<script>
+  const menu = document.querySelector("a.toggle");
+  const open = document.querySelector(".menu");
+  const body = document.querySelector("body");
+
+  menu.addEventListener("click", (e) => {
+    console.log("pressed");
+    if (open.classList.contains("hide-for-mobile")) {
+      //Close Ham Menu
+      console.log("open");
+      open.classList.remove("hide-for-mobile");
+    }
+    else{
+      open.classList.add("hide-for-mobile");
+    }
+  });
+</script>
 </html> 

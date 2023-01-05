@@ -1,9 +1,10 @@
+  <% /*Light*/ %>
   <nav class="container flex flex-jc-sb flex-ai-c">
     <a href="/">
       <img class="logo" src="/images/r-logo.png" alt="logo">
     </a>
 
-    <ul class="">
+    <ul class="hide-for-mobile">
       <li><a id="len1" class="hoverable" href="/">Home</a></li>
       <li><a id="len2" class="hoverable" href="/about">About</a></li>
       <li><a id="len2" class="hoverable" href="/sayhi">SayHi</a></li>
@@ -11,8 +12,23 @@
       <li><a id="len2" class="hoverable" href="/notes/create">Create Note</a></li>
     </ul>
 
-    <a class="button1" href="/sayhi">
+    <a class="button1 hide-for-mobile" href="/sayhi">
       Contact
+    </a>
+
+    <a class="toggle navbar-toggle hide-for-desktop">
+      <span></span>
+      <span></span>
+      <span></span>
     </a>
     
   </nav>
+<div class="menu hide-for-mobile">
+  <div class="dropdown-menu hide-for-desktop has-fade">
+    <a href="/">Home</a>
+    <a id="webDev" href="/about">About</a>
+    <a id="project" href="/sayhi">SayHi</a>
+    <a href="/notes">Notes</a>
+    <a href="/notes/create"> Create Note</a>
+  </div>
+</div>

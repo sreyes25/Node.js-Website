@@ -8,5 +8,27 @@
       <h1><%=emoji %></h1>
       <h2>These emjois have been sent :P</h2>
     </div>
+
+    <div class="content">
+      <a href="/sayhi"><button>Go Back</button></a>
+    </div>
+
 </body>
+<script>
+  const menu = document.querySelector("a.toggle");
+  const open = document.querySelector(".menu");
+  const body = document.querySelector("body");
+
+  menu.addEventListener("click", (e) => {
+    console.log("pressed");
+    if (open.classList.contains("hide-for-mobile")) {
+      //Close Ham Menu
+      console.log("open");
+      open.classList.remove("hide-for-mobile");
+    }
+    else{
+      open.classList.add("hide-for-mobile");
+    }
+  });
+</script>
 </html> 
