@@ -2,7 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const NotesRoutes = require('./routes/notesRoutes');
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 const send = require('./sms');
 
 //Envirenment
