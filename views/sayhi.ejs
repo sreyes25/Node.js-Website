@@ -1,33 +1,36 @@
 <html lang="en">
-<%- include('./partials/head_dark') %> 
-<body>
+  <%- include('./partials/head_dark') %>
+  <body>
     <%- include('./partials/nav_white') %>
-    <div class="page-title"><h1>Say Hi</h1></div>
+    <div class="page-title">Say Hi</div>
     <div class="container">
-      <h1>Hi this will send a random emoji to my phone anonymously :D</h1>
-      <h2>haven't made a no-spam function yet lol</h2>
-      <h2>try not spam it 😭 </h2>
-      
-      <form action="submit">
-      <a type="submit" href="/send" class="button1">Send</a>
-    </form>
+      <div class="content">
+        <div class="body-text">
+          Hi this will send a random emoji to my phone anonymously :D haven't
+          made a no-spam function yet lol try not spam it 😭
+        </div>
+      </div>
+      <div class="container content">
+        <form action="submit">
+          <a type="submit" href="/send" class="button1">Send</a>
+        </form>
+      </div>
     </div>
-</body>
-<script>
-  const menu = document.querySelector("a.toggle");
-  const open = document.querySelector(".menu");
-  const body = document.querySelector("body");
+  </body>
+  <script>
+    const menu = document.querySelector("a.toggle");
+    const open = document.querySelector(".menu");
+    const body = document.querySelector("body");
 
-  menu.addEventListener("click", (e) => {
-    console.log("pressed");
-    if (open.classList.contains("hide-for-mobile")) {
-      //Close Ham Menu
-      console.log("open");
-      open.classList.remove("hide-for-mobile");
-    }
-    else{
-      open.classList.add("hide-for-mobile");
-    }
-  });
-</script>
-</html> 
+    menu.addEventListener("click", (e) => {
+      console.log("pressed");
+      if (open.classList.contains("hide-for-mobile")) {
+        //Close Ham Menu
+        console.log("open");
+        open.classList.remove("hide-for-mobile");
+      } else {
+        open.classList.add("hide-for-mobile");
+      }
+    });
+  </script>
+</html>
